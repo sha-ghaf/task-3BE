@@ -1,0 +1,35 @@
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white:#fff;
+    --light-white: #666;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .image {
+    flex: 1 1 40rem;
+}
+.about .image img {
+    width: 100%;
+}
+.about .content {
+    flex: 1 1 40rem;
+}
+.about .content h3 {
+    font-size: 4.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+    padding-bottom: 1rem;
+}
+.about .content p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.5rem;
+}

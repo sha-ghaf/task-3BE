@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--style css-->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/global.css">
+        <title>Contact</title>
+    </head>
+    <body>
+        <header>{{>header}}</header>
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h3>{{title}}</h3>
+            </div>
+            <div class="box-container">
+                <div class="image">
+                    <img src={{img}} alt="">
+                </div>
+                <form action="">
+                    <h3>{{subTitle}}</h3>
+                    <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
+                    <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+                    <textarea name="guests" required class="box" maxlength="20" placeholder="enter your message" min="0" max="99" onkeypress="if(this.value.length == 100) return false" cols="30" rows="3"></textarea>
+                    <input type="submit" name="send" value="send message" class="btn">
+                </form>
+            </div>
+        </section>
+        <footer>{{>footer}}</footer>
+    </body>
+</html>

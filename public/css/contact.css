@@ -1,0 +1,39 @@
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white:#fff;
+    --light-white: #666;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.contact .box-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact .box-container .image {
+    flex: 1 1 50rem;
+}
+.contact .box-container .image img {
+    width: 100%;
+}
+.contact .box-container form {
+    flex: 1 1 30rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+.contact .box-container form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+.contact .box-container form .box {
+    width: 100%;
+    padding: 1.4rem;
+    border: var(--border);
+    margin: 1rem 0;
+    color: var(--black);
+    font-size: 1.8rem;
+}

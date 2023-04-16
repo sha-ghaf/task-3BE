@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--style css-->
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/global.css">
+        <title>About</title>
+    </head>
+    <body>
+        <header>{{>header}}</header>
+        <section class="gallery" id="gallery">
+            <div class="heading">
+                <h3>{{title}}</h3>
+            </div>
+            <ul class="switcher">
+                <li class="active" data-cat=".all">{{il1}}</li>
+                <li data-cat=".web">{{il2}}</li>
+                <li data-cat=".gfx">{{il3}}</li>
+                <li data-cat=".marketing">{{il4}}</li>
+            </ul>
+            <div class="box-container">
+                <div class="box all web">
+                    <div class="image">
+                        <img src={{img1}}  alt="" />
+                    </div>
+                </div>
+                <div class="box all marketing">
+                    <div class="image">
+                        <img src={{img2}}  alt="" />
+                    </div>
+                </div>
+                <div class="box all gfx">
+                    <div class="image">
+                        <img src={{img3}}  alt="" />
+                    </div>
+                </div>
+                <div class="box all marketing">
+                    <div class="image">
+                        <img src={{img4}}  alt="" />
+                    </div>
+                </div>
+                <div class="box all gfx">
+                    <div class="image">
+                        <img src={{img5}}  alt="" />
+                    </div>
+                </div>
+                <div class="box all web">
+                    <div class="image">
+                        <img src={{img6}}  alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>{{>footer}}</footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

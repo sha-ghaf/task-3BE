@@ -1,0 +1,33 @@
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white:#fff;
+    --light-white: #666;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.home-bg {
+    background: linear-gradient(90deg, var(--white), transparent 70%), url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+}
+.home-bg .home .content {
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home .content h3 {
+    font-size: 6rem;
+    color:var(--black);
+    font-family: 'Merienda One', cursive;
+}
+.home-bg .home .content p {
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:var(--black);
+    line-height: 2;
+}
